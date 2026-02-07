@@ -25,6 +25,7 @@ class StartScreen(Tk):
         self.root_window()
         Frame(self, width=self.width_of_window, height=self.height_of_window, bg='systemTransparent').place(x=0, y=0)
         self.bg_img()
+
         self.progress = Progressbar(self, style='red.Horizontal.TProgressbar', orient=HORIZONTAL,
                                     length=self.width_of_window*0.95,
                                     mode="determinate")
@@ -107,7 +108,7 @@ class StartScreen(Tk):
         img_n = img_name
         img_f = pth.join('data', img_n)
         print(img_f)
-        self.img = ImageTk.PhotoImage(Image.open(img_f).resize((120, 100), Image.ANTIALIAS))
+        self.img = ImageTk.PhotoImage(Image.open(img_f).resize((120, 100),Image.ANTIALIAS))
         panel = Label(self, image=self.img)
         panel.config(bg='systemTransparent')
         panel.img = self.img
@@ -118,11 +119,31 @@ class StartScreen(Tk):
         img_n = img_name
         img_f = pth.join('data', img_n)
         print(img_f)
-        self.img_bg = ImageTk.PhotoImage(Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.ANTIALIAS))
-        panel = Label(self, image=self.img_bg)
-        panel.config(bg='systemTransparent')
-        panel.img = self.img_bg
-        panel.place(x=0, y=0)
+        # Load image with alpha
+        img = Image.open(img_f).convert('RGBA')
+        img = img.resize((self.width_of_window, self.height_of_window), Image.Resampling.LANCZOS)
+        self.img_bg = ImageTk.PhotoImage(img)
+        # Use Canvas for proper transparency
+        self.bg_canvas = Canvas(self, width=self.width_of_window, height=self.height_of_window, highlightthickness=0)
+        self.bg_canvas.place(x=0, y=0)
+        # self.bg_canvas.config(bg='systemTransparent')
+        self.bg_canvas.create_image(0, 0, anchor='nw', image=self.img_bg)
+        
+        # # self.img_bg = ImageTk.PhotoImage(Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.ANTIALIAS))
+        # self.img_bg = ImageTk.PhotoImage(
+        #     Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.Resampling.LANCZOS))
+        # # Keep a reference to the label to prevent garbage collection
+        # if hasattr(self, 'bg_label'):
+        #     self.bg_label.config(image=self.img_bg)
+        # else:
+        #     self.bg_label = Label(self, image=self.img_bg, bg='systemTransparent')  # use a real bg color
+        #     self.bg_label.place(x=0, y=0, relwidth=1, relheight=1)
+        
+        # panel = Label(self, image=self.img_bg)
+        # panel.config(bg='systemTransparent')
+        # panel.img = self.img_bg
+        # panel.place(x=0, y=0)
+        
 
     def progress(self, style='red.Horizontal.TProgressbar', length=500, f_color='red', b_color='red'):
         s = Style()
