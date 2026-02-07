@@ -119,16 +119,23 @@ class StartScreen(Tk):
         img_n = img_name
         img_f = pth.join('data', img_n)
         print(img_f)
-        # Load image with alpha
-        img = Image.open(img_f).convert('RGBA')
-        img = img.resize((self.width_of_window, self.height_of_window), Image.Resampling.LANCZOS)
-        self.img_bg = ImageTk.PhotoImage(img)
-        # Use Canvas for proper transparency
-        self.bg_canvas = Canvas(self, width=self.width_of_window, height=self.height_of_window, highlightthickness=0)
-        self.bg_canvas.place(x=0, y=0)
-        # self.bg_canvas.config(bg='systemTransparent')
-        self.bg_canvas.create_image(0, 0, anchor='nw', image=self.img_bg)
-        
+        self.img_bg = ImageTk.PhotoImage(Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.ANTIALIAS))
+        panel = Label(self, image=self.img_bg)
+        panel.config(bg='systemTransparent')
+        panel.img = self.img_bg
+        panel.place(x=0, y=0)
+        # img_n = img_name
+        # img_f = pth.join('data', img_n)
+        # print(img_f)
+        # # Load image with alpha
+        # img = Image.open(img_f).convert('RGBA')
+        # img = img.resize((self.width_of_window, self.height_of_window), Image.Resampling.LANCZOS)
+        # self.img_bg = ImageTk.PhotoImage(img)
+        # # Use Canvas for proper transparency
+        # self.bg_canvas = Canvas(self, width=self.width_of_window, height=self.height_of_window, highlightthickness=0)
+        # self.bg_canvas.place(x=0, y=0)
+        # # self.bg_canvas.config(bg='systemTransparent')
+        # self.bg_canvas.create_image(0, 0, anchor='nw', image=self.img_bg)
         # # self.img_bg = ImageTk.PhotoImage(Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.ANTIALIAS))
         # self.img_bg = ImageTk.PhotoImage(
         #     Image.open(img_f).resize((self.width_of_window, self.height_of_window), Image.Resampling.LANCZOS))
