@@ -1,0 +1,127 @@
+/* **************************************************************************************** */
+                                        /* nav is here */
+.nav-a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.nav_bar{
+    display: flex;
+    background-color: red;
+    padding: 5px;
+    width: 100%;
+}
+.nav_item{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    flex: 3;
+    background-color: rgb(9, 9, 13);
+    margin: 10px;
+}
+/* **************************************************************************************** */
+                                        /* body is here  */
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+/* **************************************************************************************** */
+                                        /* .container is here */
+.container{
+    /* width: 1000px; */
+    display: flex;
+    margin: 0 auto;
+    height: 700px;
+}
+/* **************************************************************************************** */
+                                        /* left bar is here */ 
+                                        /* right bar is here */ 
+.left_bar{
+    /* float: left; */
+    flex:10%;
+    width: 100px;
+    background: #b4b3b3;
+    padding: 20px;
+    font-size: 1cm;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right_bar{
+    flex:10%;
+    width: 100px;
+    background: #b4b3b3;
+    padding: 20px;
+    font-size: 1cm;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* **************************************************************************************** */
+                                        /* main content is here  */
+.main_content{
+    height: auto;
+    flex:70%;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    background: #333;
+    padding: 20px;
+}
+/* ***************************************************************************************** */
+                                        /* footer is here */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* **************************************************************************************** */
+                                        /* colomn is here */
+.column {
+    /* flex: 33.33%; */
+    padding: 5px;
+}
+/* **************************************************************************************** */
+                            /* a is here */
+.a{
+    text-decoration: none;
+    color: black;
+
+}
+/* ******************************************************************************************* */
+.page-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.materials{
+padding:20px;
+}
