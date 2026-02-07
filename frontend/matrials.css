@@ -1,0 +1,322 @@
+/* **************************************************************************************** */
+                                        /* nav is here */
+.nav-a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.nav_bar{
+    display: flex;
+    background-color: red;
+    padding: 5px;
+    width: 100%;
+}
+.nav_item{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    flex: 3;
+    background-color: rgb(9, 9, 13);
+    margin: 10px;
+}
+/* **************************************************************************************** */
+                                        /* body is here  */
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+/* **************************************************************************************** */
+                                        /* .container is here */
+.container{
+    /* width: 1000px; */
+    display: flex;
+    margin: 0 auto;
+    height: 700px;
+}
+/* **************************************************************************************** */
+                                        /* left bar is here */ 
+                                        /* right bar is here */ 
+.left_bar{
+    /* float: left; */
+    flex:10%;
+    width: 100px;
+    background: #b4b3b3;
+    padding: 20px;
+    font-size: 1cm;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right_bar{
+    /* float: right; */
+    flex:6%;
+    /* width: 50px; */
+    /* height: 700px; */
+    background: #b4b3b3;
+    /* padding: 20px; */
+}
+/* **************************************************************************************** */
+                                        /* main content is here  */
+.main_content{
+    height: auto;
+    flex:70%;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    background: #333;
+    padding: 20px;
+}
+/* ***************************************************************************************** */
+                                        /* footer is here */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* **************************************************************************************** */
+                                        /* colomn is here */
+.column {
+    /* flex: 33.33%; */
+    padding: 5px;
+}
+/* **************************************************************************************** */
+                            /* a is here */
+.a{
+    text-decoration: none;
+    color: black;
+
+}
+/* ******************************************************************************************** */
+.page-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.add-mat-input-div{
+    height: 1.5cm;
+    width: 150px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    background-color: rgb(29, 98, 98);
+    color: #ffffff;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.materials{
+text-align: center;
+align-items: center;
+justify-items: center;
+}
+.show-all-mat-btn{
+    text-decoration: none;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #0ff; /* Neon color */
+  background-color: #111;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #0ff; /* Initial glow */
+  transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Keeps sparkles inside the button area */
+}
+button:hover {
+  color: #111;
+  background-color: #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 60px #0ff, 0 0 100px #0ff; /* Intensify glow on hover */
+}
+.kl-al-mokawnat-a{
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #0ff; /* Neon color */
+  background-color: #111;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #0ff; /* Initial glow */
+  transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Keeps sparkles inside the button area */
+}
+.kl-al-mokawnat-a:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 60px #0ff, 0 0 100px #0ff; /* Intensify glow on hover */
+}
+.disc-for-the-form{
+    color: #ffffff;
+}
+.kl-al-mucawnat-text{
+    color: #ffffff;
+}
+
+.down-part-mat-input{
+    margin-top: 10%; 
+}
+.mat_table{
+width: 100%;
+color: #ffffff;
+}
+.product-card {
+    width: 300px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .badge {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background: #ff4d4d;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    padding: 20px;
+    background: #f0f0f0;
+  }
+
+  .product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .product-details {
+    padding: 20px;
+  }
+
+  .product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+
+  .product-details h4 a {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .product-details p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  .product-bottom-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+
+  .product-price {
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: 600;
+  }
+
+  .product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+    color: #ccc;
+  }
+
+
+  .cart-btn:hover {
+    background: #ff4d4d;
+  }
+  .a-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+
+  }
+  .a-btn{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0ff; /* Neon color */
+  background-color: #111;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #0ff; /* Initial glow */
+  transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+  overflow: hidden; /* Keeps sparkles inside the button area */
+}
+.a-btn:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 60px #0ff, 0 0 100px #0ff; /* Intensify glow on hover */
+}

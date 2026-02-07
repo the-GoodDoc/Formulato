@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matrials.css"> 
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="icon" type="image/x-icon" href="perfume.png"> 
+
+    <!-- your app name -->
+    <title>lustag</title>
+    
+</head>
+<body>
+    <!-- tool bar  -->
+     
+     <nav>
+        <div class="nav_bar row">
+        <div class="nav_item"><a class="nav_link nav-a" href="matrials.html">المكونات</a></div>
+        <div class="nav_item"><a class="nav_link nav-a" href="product.html">products</a></div>
+        <div class="nav_item"><a class="nav_link nav-a" href="">Formulas</a></div>
+        <div class="nav_item"><a class="nav_link nav-a" href="">المشتريات</a></div>
+        <div class="nav_item"><a class="nav_link nav-a" href="">المخزن</a></div>
+        <div class="nav_item"><a class="nav_link nav-a" href="">المبيعات</a></div>
+        <!-- <div class="nav_item"><a class="nav_link" href=""></a></div> -->
+        </div>
+
+     </nav>
+     <p class="page-name">اضافة مكون</p>
+    <!-- container -->
+    <div class="container">
+        <!-- left bar  -->
+        <div class="left_bar column a" >
+            
+            <a href="" class="a">حفظ</a>
+            <hr>
+            <a href="" class="a">طباعة</a>
+            <hr>
+            <a href="" class="a">اضافة منتج</a>
+            <hr>
+            <a href="" class="a"> قأمت الصناف</a>
+            <!-- <a href=""></a> -->
+        </div>
+        <!-- main area page   -->
+        <div class="column main_content a">
+            <div class="all-thing-in-main-area">
+                <div>
+                <form>
+                    
+                    <input type="text" id="material-name-id" placeholder="type the material name">
+                    <p class="disc-for-the-form">material data:</p><input type="date" id="material-data-id" placeholder="type the material date">
+                    <p class="disc-for-the-form">material expiar date:</p></p><input type="date" id="material-expiar" placeholder="type the material expiar">
+                    <hr>
+                    <input type="text" id="material-esed-id" placeholder="type the material used">
+                    <hr>
+                    <input type="text" id="mat-catagory" placeholder="catigory">
+                    <hr>
+                    <input type="text" id="mat-rule" placeholder="rule">
+                    <hr>
+                    <div class="down-part-mat-input">
+                        <button type="submit" id="material-save-btn" onclick="">save</button>
+                        <hr>
+                        <button type="reset" value="reset">reset</button>
+                        <hr>
+                        <a class="kl-al-mokawnat-a" href="matrerials_list.html">show all matrials list</a>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <!-- right  -->
+        <div class="right_bar column a">
+            <a href="" class="a">formula</a>
+            <hr>
+            <a href=""class="a">المشتريات</a>
+            <hr>
+            <a href=""class="a">المخزن</a>
+            <hr>
+            <a href=""class="a">المبيعات</a>
+            <!-- <a href=""></a> -->
+        </div>
+    </div>
+    <!-- footer -->  
+    <footer class="row footer">
+        <div class="column footer_bar a"></div>
+        <div class="column footer_date a">
+            <div class="row footer_time a" id="footer_time">
+            </div>
+            <div class="footer_date a" id="footer_date">
+            </div>
+        </div>
+     </footer>
+    <script src="main.js"></script>
+</body>
+</html>
